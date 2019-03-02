@@ -1,18 +1,18 @@
 # import libraries
+import time
 import requests
 import re
 from bs4 import BeautifulSoup
 import json
 
-import time
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.keys import Keys
+
 
 # Opens an instance of Chrome to enable the JS scroll update, adding more listings to the search, then collect their URIs 
-def seleniumScrape(pagedown_count=50):
+def seleniumScrape(pagedown_count=2):
     listingIDs = []
 
     browser = webdriver.Chrome(ChromeDriverManager().install())
@@ -34,31 +34,11 @@ def seleniumScrape(pagedown_count=50):
         listingIDs.append(listing.get_attribute("id"))
     return listingIDs
 
-listingIDs = seleniumScrape()        
-
-# Old method
-# def scrapeListingURLs():
-#     base_url = "https://homes.ksl.com/"
-#     headers = {
-#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
-#     }
-#     # make request with requests library, parse it with BeautifulSoup
-#     page_response = requests.get(base_url, headers= headers, timeout=5)
-#     page_cotent = BeautifulSoup(page_response.content, "html.parser")
-
-#     page_listings = page_cotent.findAll("div", {"class":"listing-group"})
-#     listings = []
-#     for listing in page_listings.children:
-#         if listing != "\n":
-#             listing_url = listing.find("a", {"class":"link"}).attrs['href']
-#             listings.append(listing_url)
-#     return listings
-
-# scrapeListingURLs()
 
 def extractListingDetails(base_url, listingID):
     # url = "https://homes.ksl.com/listing/40310982"
     # Need to send a proper user agent header so that we don't get a 403 Forbidden response
+    print("Extracting from Listing: ", listingID)
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
     }
@@ -77,6 +57,14 @@ def extractListingDetails(base_url, listingID):
     }
     return listingDict
 
+def saveToLog(listingIDs):
+    listings = []
+    for listingID in listingIDs:
+        listings.append(extractListingDetails("https://homes.ksl.com/listing/", listingID))
+    with open('listings.json', 'w+') as outfile:  
+        json.dump(listings, outfile, indent=4)
+    print("Saved listings to log")
 
-for listingID in listingIDs:
-    print(extractListingDetails("https://homes.ksl.com/listing/", listingID))
+if __name__ == "__main__":
+    listingIDs = seleniumScrape()
+    saveToLog(listingIDs)
