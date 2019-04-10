@@ -1,0 +1,234 @@
+MLP_Data.txt
+
+hidden_layer_sizes=(1000, 20), max_iter=500
+
+******************************
+MLP Accuracy: 0.0116 -- 1.16%
+******************************
+
+Prediction: 299900
+Actual: 234800
+Prediction: 299900
+Actual: 424900
+Prediction: 299900
+Actual: 160000
+Prediction: 299900
+Actual: 208900
+Prediction: 299900
+Actual: 768900
+Prediction: 299900
+Actual: 399000
+Prediction: 299900
+Actual: 349500
+Prediction: 299900
+Actual: 216000
+Prediction: 299900
+Actual: 244000
+Prediction: 299900
+Actual: 472500
+
+******************************
+MLP Accuracy: 0.0162 -- 1.6199999999999999%
+******************************
+
+
+
+hidden_layer_sizes=(1000, 20), max_iter=500, learning_rate_init=0.01
+
+******************************
+MLP Accuracy: 0.0139 -- 1.39%
+******************************
+
+
+hidden_layer_sizes=(1000, 20), max_iter=1000
+
+******************************
+MLP Regression Accuracy: 0.5504 -- 55.04%
+******************************
+
+******************************
+MLP Regression Accuracy: 0.5709 -- 57.089999999999996%
+******************************
+
+******************************
+MLP Regression Accuracy: 0.5986 -- 59.86%
+******************************
+
+******************************
+MLP Regression Accuracy: 0.5053 -- 50.529999999999994%
+******************************
+
+******************************
+MLP Regression Accuracy: 0.6096 -- 60.96%
+******************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Prediction: 365248.0
+Actual: 344950
+Difference: 20297.9
+Current MAPE: 0.059 -- 5.8999999999999995%
+
+Prediction: 246378.0
+Actual: 292000
+Difference: 45622.08
+Current MAPE: 0.156 -- 15.6%
+
+Prediction: 687230.0
+Actual: 875000
+Difference: 187770.05
+Current MAPE: 0.215 -- 21.5%
+
+Prediction: 710581.0
+Actual: 799000
+Difference: 88418.97
+Current MAPE: 0.111 -- 11.1%
+
+Prediction: 444665.0
+Actual: 319900
+Difference: 124765.25
+Current MAPE: 0.39 -- 39.0%
+
+Prediction: 282029.0
+Actual: 399000
+Difference: 116971.06
+Current MAPE: 0.293 -- 29.299999999999997%
+
+Prediction: 307281.0
+Actual: 304000
+Difference: 3281.23
+Current MAPE: 0.011 -- 1.0999999999999999%
+
+Prediction: 334985.0
+Actual: 329900
+Difference: 5085.21
+Current MAPE: 0.015 -- 1.5%
+
+Prediction: 436335.0
+Actual: 469900
+Difference: 33564.86
+Current MAPE: 0.071 -- 7.1%
+
+Prediction: 277943.0
+Actual: 315000
+Difference: 37057.32
+Current MAPE: 0.118 -- 11.799999999999999%
+
+Overall MAPE: 0.144 -- 14.399999999999999%
+
+******************************
+MLP Regression Accuracy: 0.6366 -- 63.660000000000004%
+******************************
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5508 -- 55.08%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.246 -- 24.6%
+******************************
+
+2
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5128 -- 51.28%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.3045 -- 30.45%
+******************************
+
+3
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5117 -- 51.17%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2313 -- 23.13%
+******************************
+
+4
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.551 -- 55.1%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2403 -- 24.03%
+******************************
+
+5
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5531 -- 55.31%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2552 -- 25.52%
+******************************
+
+6
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5355 -- 53.55%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.3226 -- 32.26%
+******************************
+
+7
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.546 -- 54.6%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2448 -- 24.48%
+******************************
+
+8
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5455 -- 54.55%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2536 -- 25.36%
+******************************
+
+9
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.5429 -- 54.290000000000006%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2091 -- 20.91%
+******************************
+
+10
+******************************
+20 Different Instances of MLPRegressor
+        Accuracy: 0.531 -- 53.1%
+******************************
+
+******************************
+Mean Absolute Percent Error/Loss Function (200 Instances)
+        Accuracy: 0.2513 -- 25.130000000000003%
+******************************
+
